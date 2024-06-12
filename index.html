@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greta VS Tate</title>
+    <link rel="icon" type="image/png" href="logoTate.png">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+            flex-direction: column;
+        }
+
+        .sides {
+            animation: 0.7s curtain cubic-bezier(.86, 0, .07, 1) 0.4s both;
+            display: grid;
+            grid-template-columns: 50vw 50vw;
+        }
+
+        @keyframes curtain {
+            0% {
+                grid-gap: 100vw;
+            }
+            100% {
+                grid-gap: 0;
+            }
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: "Arial Black", sans-serif;
+        }
+
+        .intro {
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sides {
+            position: relative;
+        }
+
+        .side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 6vw;
+        }
+
+        .monkey {
+            background-color: #dcc9a1;
+            color: #534325;
+        }
+
+        .robot {
+            background-color: #1b636f;
+            color: #ffffff;
+        }
+
+        .name {
+            margin: 0.3em;
+        }
+
+        .emoji {
+            font-size: 3em;
+        }
+
+        .versus {
+            position: absolute;
+            width: 8vw;
+            height: 8vw;
+            background: #0ad4f7;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.4vw;
+            color: black;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #1b636f #dcc9a1 #dcc9a1 #1b636f;
+            transform: rotate(-45deg);
+        }
+
+        .versus span {
+            transform: rotate(35deg);
+        }
+
+        .tateGif {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .gretaGif {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            background-color: #0ad4f7;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <a class="button" href="https://t.me/gretavstateG" target="_blank">Twitter</a>
+        <a class="button" href="https://x.com/GretaVsTate" target="_blank">Telegram</a>
+    </div>
+    <div class="intro">
+        <div class="sides">
+            <div class="side monkey">
+                <img src="greta.gif" autoplay class="gretaGif" style="z-index: 99;"/>
+            </div>
+            <div class="versus">
+                <span>vs.</span>
+            </div>
+            <div class="side robot">
+                <img src="tate4.gif" autoplay class="tateGif" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
